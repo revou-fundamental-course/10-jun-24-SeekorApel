@@ -1,84 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DICKY MUZAKKI Konversi Suhu</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-
-<body>
-    
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Website Konversi Suhu</h1>
+      <h1>Website Konversi Suhu</h1>
     </header>
-
     <main>
-        <h3>Masukan Suhu derajat Celcius (&deg;C)</h3>
-        <!-- section celcius -->
+      <section id="celsiusSection">
+        <header>
+          <h3>Celcius (&deg;C)</h3>
+        </header>
         <section>
-            <header>
-                <h3>Celcius (&deg;C)</h3>
-            </header>
-
-            <section>
-                <Textarea>
-
-                </Textarea>
-            </section>
+          <textarea id="celsiusInput" placeholder="Masukkan derajat Celcius"></textarea>
         </section>
-
-        <!-- section fahrenheit -->
+      </section>
+      <section id="fahrenheitSection">
+        <header>
+          <h3>Fahrenheit (&deg;F)</h3>
+        </header>
         <section>
-            <header>
-                <h3>Fahrenheit (&deg;F)</h3>
-            </header>
-
-            <section>
-                <Textarea>
-                    
-                </Textarea>
-            </section>
-
+          <textarea id="fahrenheitInput" placeholder="Hasil dalam Fahrenheit" readonly></textarea>
         </section>
-
-        <!-- section calculate -->
+      </section>
+      <section>
+        <header>
+          <h3>Konversi Calculate</h3>
+        </header>
         <section>
-            <header>
-                <h3>Konversi Calculate</h3>
-            </header>
-
-            <section>
-                <Textarea>
-                    
-                </Textarea>
-            </section>
-
+          <textarea id="calculationOutput" readonly></textarea>
         </section>
-
-        <!-- section formula info -->
-        <section>
-            <header>
-                <h1>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit(&deg;F)</h1>
-            </header>
-
-            <hr/>
-
-            <h4>Suhu <span class="subject-info">S</span> dalam derajat Fahrenheit(&deg;F) sama <span class="subject-info">S</span> dengan suhu dalam derajat Celcius (&deg;C)</h4>
-
-            <p>
-                <span class="subject-info">S</span><sub>(&deg;F)</sub> = 
-                (<span class="subject-info">S</span><sub>(&deg;C)</sub> x 9/5) + 32
-            </p>
-        </section>
+      </section>
+      <section>
+        <button id="convertButton">Konversi</button>
+        <button id="resetButton">Reset</button>
+        <button id="reverseButton">Reverse</button>
+      </section>
+      <section>
+        <header>
+          <h1 id="conversionTitle">Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit(&deg;F)</h1>
+        </header>
+        <hr />
+        <h4>Rumus Konversi:</h4>
+        <p><span class="subject-info">F</span><sub>(&deg;F)</sub> = (<span class="subject-info">C</span><sub>(&deg;C)</sub> × 9/5) + 32</p>
+        <p><span class="subject-info">C</span><sub>(&deg;C)</sub> = (<span class="subject-info">F</span><sub>(&deg;F)</sub> - 32) × 5/9</p>
+      </section>
     </main>
-
     <script src="js/script.js"></script>
-
-</body>
-
-
+  </body>
 </html>
